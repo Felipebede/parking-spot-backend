@@ -1,0 +1,6 @@
+com\example\parkingspot\ParkingSpotApplication.class
+com\example\parkingspot\model\ParkingSpotModel.class
+com\example\parkingspot\service\ParkingSpotService.class
+com\example\parkingspot\model\dto\ParkingSpotDTO.class
+com\example\parkingspot\repository\ParkingSpotRepository.class
+com\example\parkingspot\controller\ParkingSpotController.class
