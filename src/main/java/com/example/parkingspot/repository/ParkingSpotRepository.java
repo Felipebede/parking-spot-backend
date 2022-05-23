@@ -4,9 +4,13 @@ import com.example.parkingspot.model.ParkingSpotModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.UUID;
-
 @Repository
-public interface ParkingSpotRepository extends JpaRepository<ParkingSpotModel, UUID> {
+public interface ParkingSpotRepository extends JpaRepository<ParkingSpotModel, Integer> {
+
+    boolean existsByVehiclePlate(String vechiclePlate);
+
+    boolean existsByParkingSpotNumber(String parkingSpotNumber);
+
+    boolean existsByApartmentAndBlock(String apartment, String block);
 
 }
